@@ -1,13 +1,23 @@
-import Home from "./pages/Home";
-
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "@components/HomePage";
+// import LoginPage from "./pages/Login";
+// import VideosPage from "./pages/VideosPage";
+// import RegisterPage from "./pages/Register";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/home" element={<HomePage />} />
+        {/* <Route path="/register" element={<RegisterPage />} />
+        <Route path="/videos" element={<VideosPage />} />
+        <Route path="/home" element={<LoginPage />} /> */}
+
+        {/* <div className="App">
       <p>coucou</p>
-    </div>
+    </div> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -26,8 +26,14 @@
   "author": "Wild Code School",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
     "concurrently": "^7.6.0",
     "cross-env": "^7.0.3",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.8.0"
   }
 }
