@@ -4,10 +4,9 @@ import NavBar from "./NavBar";
 
 export default function HomePage() {
   return (
-    <section className="bg-blue-500 w-full h-screen p-6">
-      <div>
+    <section className="bg-blue-500 w-screen h-screen">
+      <div className="">
         <NavBar />
-        Hello!
       </div>
     </section>
   );
