@@ -29,7 +29,7 @@ pool.getConnection().catch(() => {
 
 const models = {};
 
-const ItemManager = require("./ItemManager");
+const ItemManager = require("./WordsManager");
 
 models.item = new ItemManager();
 models.item.setDatabase(pool);

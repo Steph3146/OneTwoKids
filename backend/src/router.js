@@ -4,7 +4,7 @@ const router = express.Router();
 
 const usersControllers = require("./controllers/usersControllers");
 const videosControllers = require("./controllers/videosControllers");
-const animalsControllers = require("./controllers/animalsControllers");
+const wordsControllers = require("./controllers/wordsControllers");
 const numbersControllers = require("./controllers/numbersControllers");
 
 router.get("/users", usersControllers.browse);
@@ -19,11 +19,11 @@ router.put("/videos/:id", videosControllers.edit);
 router.post("/videos", videosControllers.add);
 router.delete("/videos/:id", videosControllers.destroy);
 
-router.get("/animals", animalsControllers.browse);
-router.get("/animals/:id", animalsControllers.read);
-router.put("/animals/:id", animalsControllers.edit);
-router.post("/animals", animalsControllers.add);
-router.delete("/animals/:id", animalsControllers.destroy);
+router.get("/words", wordsControllers.browse);
+router.get("/words/:id", wordsControllers.read);
+router.put("/words/:id", wordsControllers.edit);
+router.post("/words", wordsControllers.add);
+router.delete("/words/:id", wordsControllers.destroy);
 
 router.get("/numbers", numbersControllers.browse);
 router.get("/numbers/:id", numbersControllers.read);
