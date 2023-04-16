@@ -1,12 +1,14 @@
 import React from "react";
-import "../index.css";
 import NavBar from "../components/NavBar";
 
-export default function HomePage() {
+export default function VideosPage() {
   return (
     <section className="bg-blue-500 w-screen h-screen">
-      <div className="fixed">
+      <div className="">
         <NavBar />
+      </div>
+      <div className="ml-[22vw]">
+        <p>Les comptines/The nursery rhymes</p>
       </div>
     </section>
   );
