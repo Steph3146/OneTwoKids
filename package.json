@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "argon2": "^0.30.3",
+    "axios": "^1.4.0",
     "react-router-dom": "^6.8.0",
     "typescript": "^5.0.4",
     "TypeScript": "npm:typescript@^5.0.4"
