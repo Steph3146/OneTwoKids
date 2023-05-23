@@ -1,15 +1,20 @@
+const axios = require("axios");
+
+const { API_KEY } = process.env;
+
 const models = require("../models");
 
-const browse = (req, res) => {
-  models.videos
-    .findAll()
-    .then(([rows]) => {
-      res.send(rows);
-    })
-    .catch((err) => {
-      console.error(err);
-      res.sendStatus(500);
-    });
+const browse = async () => {
+  try {
+    const response = await axios.get(
+      `https://www.googleapis.com/youtube/v3/key=${API_KEY}`
+    );
+    response.data.message = "Liste des films";
+    response.status(200).json(response.data);
+    // console.log(response.data)
+  } catch (error) {
+    console.error("Video not found");
+  }
 };
 
 const read = (req, res) => {

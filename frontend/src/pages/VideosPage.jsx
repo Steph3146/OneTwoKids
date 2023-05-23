@@ -10,6 +10,7 @@ export default function VideosPage() {
       <div className="ml-[22vw]">
         <p>Les comptines/The nursery rhymes</p>
       </div>
+      <div>First video</div>
     </section>
   );
 }
