@@ -6,14 +6,17 @@ const models = require("../models");
 
 const browse = async () => {
   try {
-    const response = await axios.get(
-      `https://www.googleapis.com/youtube/v3/key=${API_KEY}`
-    );
+    const searchTerm = "janet jackson";
+    const encodedSearchTerm = encodeURIComponent(searchTerm);
+    const url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&q=${encodedSearchTerm}&type=video&part=snippet&maxResults=20`;
+
+    const response = await axios.get(url);
     response.data.message = "Liste des films";
-    response.status(200).json(response.data);
-    // console.log(response.data)
+    // console.log(response.data);
+    return response;
   } catch (error) {
-    console.error("Video not found");
+    console.error("Vidéo non trouvée");
+    throw error; // Ajoutez cette ligne pour renvoyer l'erreur
   }
 };
 
