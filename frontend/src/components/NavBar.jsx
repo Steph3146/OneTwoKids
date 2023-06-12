@@ -5,8 +5,8 @@ import logoOneTwoKids from "../assets/onetwokids_images/logoApp/logoOneTwoKids.p
 
 export default function NavBar() {
   return (
-    <nav className=" flex flex-col border-gray-200 w-[19vw] bg-gray-800 h-screen overflow-visible fixed">
-      <div className="flex flex-col font-gloriahallelujah-regular items-center mt-4 text-white">
+    <nav className=" flex flex-col text-[1.2vw] border-gray-200 w-[19vw] bg-gray-800 h-screen overflow-visible fixed">
+      <div className="flex flex-col font-[gloriahallelujah-regular] items-center mt-4 text-white">
         <img src={logoOneTwoKids} alt="Logo One Two Kids" />
         <Link to="/">
           <button
